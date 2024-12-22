@@ -1,4 +1,3 @@
-run-name: /.github/workflows/deploy.yml
 name: Deploy static content to Pages
 
 on:
