@@ -20,7 +20,7 @@ const Header = () => {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="text-gray-600 hover:text-red-600"
           >
-            <div className="text-2xl font-bold text-red-600"><img src="https://github.com/n-mandadapu/lees-burgers/blob/e8e3d7fca8ce7d3a0382e7705754579e4a3e98a8/src/images/logo_processed.jpg" alt="Lee's Burgers Logo" className="h-8 w-8 mr-2 inline-block" />Lee's Burgers & Malts</div>
+            <div className="text-2xl font-bold text-red-600"><img src="https://github.com/n-mandadapu/lees-burgers/blob/main/src/images/logo_processed.jpg" alt="Lee's Burgers Logo" className="h-8 w-8 mr-2 inline-block" />Lee's Burgers & Malts</div>
           </button>
           
           {/* Mobile menu button */}
