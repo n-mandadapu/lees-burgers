@@ -16,7 +16,12 @@ const Header = () => {
     <header className="fixed w-full bg-white shadow-md z-50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-red-600">Lee's Burgers</div>
+          <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="text-gray-600 hover:text-red-600"
+          >
+            <div className="text-2xl font-bold text-red-600"><img src="src/images/logo_processed.jpg" alt="Lee's Burgers Logo" className="h-8 w-8 mr-2 inline-block" />Lee's Burgers & Malts</div>
+          </button>
           
           {/* Mobile menu button */}
           <button 

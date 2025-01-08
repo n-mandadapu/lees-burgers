@@ -11,13 +11,13 @@ const menuItems = [
     name: "Juicy Wings",
     price: "$9.99",
     description: "Crispy chicken wings tossed in your choice of sauce",
-    image: "https://github.com/n-mandadapu/lees-burgers/blob/main/src/images/wings.jpg?auto=format&fit=crop&q=80"
+    image: "src/images/wings.jpg?auto=format&fit=crop&q=80"
   },
   {
     name: "Milkshakes",
     price: "$4.99",
     description: "Hand-spun milkshakes made with real ice cream",
-    image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&q=80"
+    image: "src/images/malts.jpg?auto=format&fit=crop&q=80"
   },
 ];
 
@@ -40,7 +40,7 @@ const Menu = () => {
               <div className="p-6">
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="text-xl font-bold">{item.name}</h3>
-                  <span><p className="text-gray-500 text-sm">Starting from {item.price}</p></span>
+                  <span><p className="text-gray-500 text-sm">Starting from <strong>{item.price}</strong> </p></span>
                 </div>
                 <p className="text-gray-600">{item.description}</p>
               </div>
@@ -50,11 +50,11 @@ const Menu = () => {
 
         <div className="text-center">
           <a
-            href="https://github.com/n-mandadapu/lees-burgers/blob/main/src/menu.pdf"
+            href="src/menu.pdf"
             className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 transition-colors"
           >
             <FileText size={20} />
-            Download Full Menu (PDF)
+            Veiw Full Menu (PDF)
           </a>
         </div>
       </div>

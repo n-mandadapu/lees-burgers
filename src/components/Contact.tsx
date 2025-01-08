@@ -13,7 +13,7 @@ const Contact = () => {
               <Phone className="text-red-600" size={24} />
               <div>
                 <h3 className="font-semibold">Phone</h3>
-                <p className="text-gray-600">(123) 456-7890</p>
+                <p className="text-gray-600">269-365-0055</p>
               </div>
             </a>
             
@@ -29,14 +29,11 @@ const Contact = () => {
           <div className="text-center">
             <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
             <div className="flex justify-center gap-6">
-              <a href="#" className="text-gray-600 hover:text-red-600 transition-colors">
+              <a href="https://www.instagram.com/leesburgersandmalts/" className="text-gray-600 hover:text-red-600 transition-colors">
                 <Instagram size={24} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-red-600 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61569795609726" className="text-gray-600 hover:text-red-600 transition-colors">
                 <Facebook size={24} />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-red-600 transition-colors">
-                <Twitter size={24} />
               </a>
             </div>
           </div>
