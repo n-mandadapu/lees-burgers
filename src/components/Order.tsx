@@ -10,9 +10,11 @@ const Order = () => {
         <p className="text-xl mb-8 max-w-2xl mx-auto">
           Skip the line and order your favorite burgers online for pickup or delivery!
         </p>
-        <button className="bg-white text-red-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">
-          Start Your Order
-        </button>
+        <a href="http://toasttab.com/lees-hamburgers-and-malts-5234-portage-rd" target="_blank" rel="noopener noreferrer">
+          <button className="bg-white text-red-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">
+            Start Your Order
+          </button>
+        </a>
       </div>
     </section>
   );
