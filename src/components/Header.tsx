@@ -1,28 +1,48 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom'; // Import navigation hooks
 import { Menu, X } from 'lucide-react';
+import logo from '../images/logo_processed.jpg'; // Ensure this path is correct
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();  // Navigation hook
+  const location = useLocation();  // Current location hook
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
+  const handleLogoClick = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/');
     }
   };
+
+  const scrollToSection = (id: string) => {
+    if (location.pathname !== '/') {
+      navigate('/', { state: { targetSection: id } });
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        setIsMenuOpen(false);
+      }
+    }
+  };
+  
 
   return (
     <header className="fixed w-full bg-white shadow-md z-50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="text-gray-600 hover:text-red-600"
+            onClick={handleLogoClick}
+            className="text-gray-600 hover:text-red-600"
           >
-            <div className="text-2xl font-bold text-red-600"><img src="https://github.com/n-mandadapu/lees-burgers/blob/main/src/images/logo_processed.jpg" alt="Lee's Burgers Logo" className="h-8 w-8 mr-2 inline-block" />Lee's Burgers & Malts</div>
+            <div className="text-2xl font-bold text-red-600">
+              <img src={logo} alt="Lee's Burgers Logo" className="h-8 w-8 mr-2 inline-block" />
+              Lee's Burgers & Malts
+            </div>
           </button>
-          
+
           {/* Mobile menu button */}
           <button 
             className="md:hidden"

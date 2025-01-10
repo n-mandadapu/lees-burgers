@@ -1,4 +1,7 @@
 import { FileText } from 'lucide-react';
+import wings from '../images/wings.jpg';
+import malts from '../images/malts.jpg';
+import menuPdf from '../pdf/menu.pdf';
 
 const menuItems = [
   {
@@ -11,13 +14,13 @@ const menuItems = [
     name: "Juicy Wings",
     price: "$9.99",
     description: "Crispy chicken wings tossed in your choice of sauce",
-    image: "src/images/wings.jpg?auto=format&fit=crop&q=80"
+    image: wings
   },
   {
     name: "Milkshakes",
     price: "$4.99",
     description: "Hand-spun milkshakes made with real ice cream",
-    image: "src/images/malts.jpg?auto=format&fit=crop&q=80"
+    image: malts
   },
 ];
 
@@ -50,7 +53,7 @@ const Menu = () => {
 
         <div className="text-center">
           <a
-            href="src/menu.pdf"
+            href={menuPdf} target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 transition-colors"
           >
             <FileText size={20} />

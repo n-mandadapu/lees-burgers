@@ -1,5 +1,4 @@
-import React from 'react';
-import { Phone, Mail, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Phone, Mail, Instagram, Facebook } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -17,11 +16,11 @@ const Contact = () => {
               </div>
             </a>
             
-            <a href="mailto:infoleesburgers@gmail.com" className="flex items-center gap-4 p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+            <a href="mailto:Leesburgersandmalts@gmail.com" className="flex items-center gap-4 p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
               <Mail className="text-red-600" size={24} />
               <div>
                 <h3 className="font-semibold">Email</h3>
-                <p className="text-gray-600">infoleesburgers@gmail.com</p>
+                <p className="text-gray-600">Leesburgersandmalts@gmail.com</p>
               </div>
             </a>
           </div>
