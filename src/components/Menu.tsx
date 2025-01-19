@@ -5,21 +5,21 @@ import menuPdf from '../pdf/menu.pdf';
 
 const menuItems = [
   {
-    name: "Classic Burgers",
-    price: "$8.99",
-    description: "100% Angus beef patty with lettuce, tomato, onions, and our special sauce",
+    name: "Double Cheese Burger",
+    price: "$9.99",
+    description: "Two 4oz patties, American cheese, lettuce, tomato, onion, pickles, and house special sauce",
     image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80"
   },
   {
-    name: "Juicy Wings",
-    price: "$9.99",
-    description: "Crispy chicken wings tossed in your choice of sauce",
+    name: "Spicy Wings of Fire",
+    price: "5pc - $8.99 or 10pc - $13.99",
+    description: "Served with fries or tots and soda",
     image: wings
   },
   {
-    name: "Milkshakes",
-    price: "$4.99",
-    description: "Hand-spun milkshakes made with real ice cream",
+    name: "Malts",
+    price: "$5.50",  
+    description: "Vanilla, Chocolate, or Strawberry",
     image: malts
   },
 ];
@@ -43,7 +43,7 @@ const Menu = () => {
               <div className="p-6">
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="text-xl font-bold">{item.name}</h3>
-                  <span><p className="text-gray-500 text-sm">Starting from <strong>{item.price}</strong> </p></span>
+                  <span><p className="text-gray-500 text-sm"><strong>{item.price}</strong> </p></span>
                 </div>
                 <p className="text-gray-600">{item.description}</p>
               </div>
