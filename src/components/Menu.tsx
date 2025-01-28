@@ -18,7 +18,7 @@ const menuItems = [
   },
   {
     name: "Malts",
-    price: "$5.50",  
+    price: "$4.29",  
     description: "Vanilla, Chocolate, or Strawberry",
     image: malts
   },
